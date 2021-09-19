@@ -2,37 +2,55 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ip-wrapper {
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ip-input {
+  border: none;
+  font-size: 20px;
+  width: 33px;
+  background: none;
+  outline: none;
+  background: linear-gradient(#000, #000) center bottom 5px / calc(100% - 10px)
+    2px no-repeat;
+  /* text-decoration: underline; */
+  margin: 0;
+}
+
+.clear-btn {
+  background-color: rgb(180, 4, 4);
+  background-color: rgb(180, 4, 4);
+  color: #ffff;
+  margin-left: 10px;
+  outline: none;
+  font-size: 16px;
+  width: 58px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: rgb(139, 2, 2);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
